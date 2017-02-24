@@ -171,7 +171,7 @@ function Fish(x,y) {
     this.sprite.addAnimation("swim", fish_swim);
     this.sprite.setCollider("rectangle",0,0,75,32);
     this.speed = 0;
-    this.sprite.debug = true;
+    this.sprite.debug = false;
     this.init = function() {
         if (this.sprite.position.x < width/2) {
             this.sprite.mirrorX(-1);
